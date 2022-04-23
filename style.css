@@ -1,0 +1,248 @@
+/*body{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.head{*/
+/*    height: 60px;*/
+/*    width: 100%;*/
+/*    background: #242d2e;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.main_nav{*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.main_ul{*/
+/*    display: flex;*/
+/*}*/
+
+/*.main_ul li{*/
+/*    width: 200px;*/
+/*    list-style: none;*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*    margin-right: 100px;*/
+/*    border-radius: 3px;*/
+/*    transition: all 0.5s;*/
+
+/*}*/
+
+/*.main_ul li>a {*/
+/*    color: #fff;*/
+/*    font-family: monospace;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.main_ul li:hover{*/
+/*    background: white;*/
+/*}*/
+
+/*.main_ul li:hover > a{*/
+/*    color: #242d2e;*/
+/*}*/
+
+/*.shows{*/
+/*    display: flex;*/
+/*    padding: 10px;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.show_block{*/
+/*    width: 300px;*/
+/*    height: 400px;*/
+/*    margin-bottom: 20px;*/
+/*    animation: show 1s linear infinite;*/
+/*    transform: scale(1);*/
+/*    transition: all 0.5s;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.show_block:hover{*/
+/*    transform: rotateY(20deg);*/
+/*    box-shadow: 20px 20px 20px black;*/
+/*}*/
+
+/*.image{*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*}*/
+
+/*.image img{*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*}*/
+
+/*.show_block h3{*/
+/*    text-align: center;*/
+/*    font-family: monospace;*/
+/*    font-weight: bold;*/
+/*    font-size: 22px;*/
+/*}*/
+
+/*.show_block button{*/
+/*    width: 100%;*/
+/*    height: 30px;*/
+/*    background: #242d2e;*/
+/*    color: white;*/
+/*    font-family: monospace;*/
+/*    text-transform: uppercase;*/
+/*    transition: all 0.3s;*/
+/*    border: 0;*/
+/*}*/
+
+
+/*.show_block button:hover{*/
+/*    background: #0e719d;*/
+/*    color: orange;*/
+/*}*/
+
+/*!*@keyframes show {*!*/
+/*!*    from{*!*/
+/*!*        transform: scale(1);*!*/
+/*!*    }*!*/
+/*!*    to{*!*/
+/*!*        transform: scale(1.05);*!*/
+/*!*    }*!*/
+/*!*}*!*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    height: 60px;
+    width: 100%;
+    background: #242b2e;
+    padding: 5px;
+}
+
+.main_nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main_ul {
+    display: flex;
+    align-items: center;
+}
+
+.main_ul li {
+    width: 200px;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.main_ul li > a {
+    color: #ffffff;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main_ul li:hover {
+    background: #fff;
+}
+
+.main_ul li:hover > a {
+    color: #242b2e;
+}
+
+.shows {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.show_block {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    animation: show 1s linear infinite;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.show_block:hover {
+    transform: rotateY(320deg);
+    box-shadow: 20px 20px 20px black;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.show_block h3 {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.show_info ul, .show_info li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.show_info ul{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 70px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.show_info li{
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.show_block:hover ul{
+    opacity: 1;
+}
+
+.show_block button , a {
+    width: 100%;
+    height: 30px;
+    background: #242b2e;
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 0;
+}
+
+.show_block button:hover {
+    background: #0e719b;
+    color: orange;
+}
